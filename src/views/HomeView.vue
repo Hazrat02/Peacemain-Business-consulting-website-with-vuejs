@@ -1,5 +1,6 @@
 <script>
 import HomeLayout from "./../Layouts/HomeLayout.vue";
+import lineChart from "./../components/lineChart.vue";
 
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 
@@ -11,6 +12,12 @@ import testimonial from "@/assets/frontend/img/home2/testimonial-img.jpg";
 import testimonial2 from "@/assets/frontend/img/home2/testimonial-img2.jpg";
 import testimonial3 from "@/assets/frontend/img/home2/testimonial-img3.jpg";
 import testimonial4 from "@/assets/frontend/img/home2/testimonial-img4.jpg";
+import project1 from "@/assets/frontend/img/home2/project-01.jpg";
+import project2 from "@/assets/frontend/img/home2/project-02.jpg";
+import project3 from "@/assets/frontend/img/home2/project-03.jpg";
+import project4 from "@/assets/frontend/img/home2/project-04.jpg";
+import project5 from "@/assets/frontend/img/home2/project-05.jpg";
+
 import Counter from "@/components/counter.vue";
 
 export default {
@@ -19,6 +26,7 @@ export default {
     Counter,
     Carousel,
     Slide,
+    lineChart
   },
 
   data() {
@@ -64,7 +72,7 @@ export default {
       ],
       projects: [
         {
-          imageSrc: "./../assets/frontend/img/home2/project-01.jpg",
+          imageSrc: project1,
           categoryLink: "portfolio-two-column.html",
           categoryText: "Technology",
           titleLink: "portfolio-details.html",
@@ -72,7 +80,7 @@ export default {
           exploreLink: "portfolio-details.html",
         },
         {
-          imageSrc: "./../assets/frontend/img/home2/project-02.jpg",
+          imageSrc: project2,
           categoryLink: "portfolio-two-column.html",
           categoryText: "Business",
           titleLink: "portfolio-details.html",
@@ -80,7 +88,7 @@ export default {
           exploreLink: "portfolio-details.html",
         },
         {
-          imageSrc: "./../assets/frontend/img/home2/project-03.jpg",
+          imageSrc: project3,
           categoryLink: "portfolio-two-column.html",
           categoryText: "Marketing",
           titleLink: "portfolio-details.html",
@@ -88,7 +96,7 @@ export default {
           exploreLink: "portfolio-details.html",
         },
         {
-          imageSrc: "./../assets/frontend/img/home2/project-04.jpg",
+          imageSrc: project4,
           categoryLink: "portfolio-two-column.html",
           categoryText: "Business",
           titleLink: "portfolio-details.html",
@@ -96,7 +104,7 @@ export default {
           exploreLink: "portfolio-details.html",
         },
         {
-          imageSrc: "./../assets/frontend/img/home2/project-05.jpg",
+          imageSrc: project5,
           categoryLink: "portfolio-two-column.html",
           categoryText: "Consulting",
           titleLink: "portfolio-details.html",
@@ -160,6 +168,7 @@ export default {
         :transition="1"
       >
         <Slide v-for="(slide, index) in slides" :key="index">
+
           <div
             class="banner-wrapper"
             :style="{
@@ -1268,36 +1277,37 @@ export default {
             </a>
           </div>
           <div class="col-lg-12">
-            <div class="swiper project-slider">
+            <div class="swiper project-slider" >
               <Carousel
                   class="swiper-wrapper"
                   :wrapAround="true"
                   :autoplay="4000"
                   :breakpoints="breakpoints"
+            
              
 
- 
+              
                 >
                   <Slide
                     class="swiper-slide"
                     v-for="(project, index) in projects"
-                    :key="index"
+                    :key="index" 
                   >
-                  <div class="project-card">
+                  <div class="project-card" style=" margin: 0 5px;">
                     <div class="project-img">
                       <img
-                        src="./../assets/frontend/img/home2/project-01.jpg"
+                        :src="project.imageSrc"
                         alt
                       />
                     </div>
                     <div class="project-content">
                       <div class="category-title">
                         <div class="category">
-                          <a href="portfolio-two-column.html">Technology - {{index}}</a>
+                          <a href="portfolio-two-column.html">{{ project.categoryText }}</a>
                         </div>
                         <h4>
                           <a href="portfolio-details.html"
-                            >Information Technology (IT)</a
+                            >{{project.titleText}}</a
                           >
                         </h4>
                       </div>
@@ -1454,7 +1464,11 @@ export default {
             <div class="garph-content">
               <div class="graph-chart">
                 <h6>Consulting Rate (in percentage)</h6>
-                <canvas id="consulting-chart" width="600" height="300"></canvas>
+                
+                <lineChart />
+                <!-- <canvas id="consulting-chart" width="600" height="300"></canvas> -->
+              
+                
               </div>
             </div>
           </div>
