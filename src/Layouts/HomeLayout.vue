@@ -17,9 +17,9 @@
     <div class="header-topbar-area">
       <div class="topbar-area style-2">
         <ul class="topbar-left">
-          <li><a href="career.html">Careers</a></li>
-          <li><a href="contact.html">Join Us</a></li>
-          <li><a href="blog-standard.html">Insight & Events</a></li>
+          <li><router-link to="/careers">Careers</router-link></li>
+          <li><router-link to="/contact">Join Us</router-link></li>
+          <li><router-link to="/consultants">Consultants</router-link></li>
         </ul>
         <ul class="topbar-right">
           <li>Sun-Tue (9:00 am-7.00 pm)</li>
@@ -68,9 +68,9 @@
 
       <header class="header-area style-2">
         <div class="header-logo">
-          <a href="index.html"
+           <router-link to="/"
             ><img style="width: 250px;" alt="image" class="img-fluid" src="./../assets/frontend/img/logo1.png"
-          /></a>
+          /></router-link>
         </div>
         <div class="menu-wrap">
           <div class="main-menu" :class="sideShow">
@@ -78,86 +78,60 @@
               class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center"
             >
               <div class="mobile-logo-wrap">
-                <a href="index.html"
+                <router-link to="/"
                   ><img alt="image" src="./../assets/frontend/img/logo1.png"
-                /></a>
+                /></router-link>
               </div>
             </div>
             <ul class="menu-list"> 
-              <li class="menu-item-has-children" :class="{
+              <li class="" :class="{
                         active: this.$route.path === '/',
                       }"
                       >
                 <router-link class="drop-down" to="/">Home</router-link>
-                <!-- <a href="#" class="drop-down">Home</a> -->
                
               </li>
-              <li class="menu-item-has-children" :class="{
+              <li class="" :class="{
                         active: this.$route.path === '/servics',
                       }">
                       <router-link class="drop-down" to="/servics">Services</router-link>
           
               </li>
+              <li class="" :class="{
+                        active: this.$route.path === '/about',
+                      }">
+                      <router-link class="drop-down" to="/about">About Us</router-link>
+          
+              </li>
+              <li :class="{
+                        active: this.$route.path === '/contact',
+                      }">
+                                            <router-link class="drop-down" to="/contact">Contact Us</router-link>
+
+                    </li>
+
               <li class="menu-item-has-children">
-                <a href="#" class="drop-down">Pages</a
-                ><i class="bi bi-plus dropdown-icon"></i>
+                <a href="#" class="drop-down">More</a
+                ><i class="fa fa-caret-down"></i>
                 <ul class="sub-menu">
                   <li><a href="about.html">about</a></li>
                   <li><a href="industry-details.html">Industry Details</a></li>
                   <li>
                     <a href="case-study1.html">Case Study</a>
-                    <i
-                      class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"
-                    ></i>
-                    <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                      <li>
-                        <a href="case-study1.html">Case Study Style 01</a>
-                      </li>
-                      <li>
-                        <a href="case-study2.html">Case Study Style 02</a>
-                      </li>
-                      <li>
-                        <a href="case-study-details.html">Case Study Details</a>
-                      </li>
-                    </ul>
+       
                   </li>
                   <li>
                     <a href="our-people1.html">Our People</a>
-                    <i
-                      class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"
-                    ></i>
-                    <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                      <li><a href="our-people1.html">People Style 01</a></li>
-                      <li><a href="our-people2.html">People Style 02</a></li>
-                      <li><a href="our-people3.html">People Style 03</a></li>
-                      <li><a href="our-people4.html">People Style 04</a></li>
-                      <li><a href="people-details.html">People Details</a></li>
-                    </ul>
+                    
+                    
                   </li>
                   <li>
                     <a href="blog-standard.html">News & Insight</a>
-                    <i
-                      class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"
-                    ></i>
-                    <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                      <li><a href="blog-grid.html">Insight grid</a></li>
-                      <li><a href="blog-standard.html">Insight Standard</a></li>
-                      <li><a href="blog-details.html">Insight Details</a></li>
-                    </ul>
+                    
                   </li>
                   <li>
                     <a href="event.html">Event</a>
-                    <i
-                      class="d-lg-flex d-none bi bi-chevron-right dropdown-icon"
-                    ></i>
-                    <i class="d-lg-none d-flex bi bi-plus dropdown-icon"></i>
-                    <ul class="sub-menu">
-                      <li><a href="event.html">Upcoming Event</a></li>
-                      <li><a href="event-details.html">Event Details</a></li>
-                    </ul>
+                    
                   </li>
                   <li><a href="career.html">Career opportunity</a></li>
                   <li><a href="apply-position.html">Apply Position</a></li>
@@ -169,42 +143,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="menu-item-has-children">
-                <a href="#" class="drop-down">Portfolio </a
-                ><i class="bi bi-plus dropdown-icon"></i>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="portfolio-single-column.html"
-                      >Portfolio Style 01</a
-                    >
-                  </li>
-                  <li>
-                    <a href="portfolio-two-column.html">Portfolio Style 02</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-three-column.html">Portfolio Style 03</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-three-column-tab.html"
-                      >Portfolio Style 04 With Tab</a
-                    >
-                  </li>
-                  <li>
-                    <a href="portfolio-fixed-container.html"
-                      >Fixed Container Portfolio</a
-                    >
-                  </li>
-                  <li>
-                    <a href="portfolio-details.html">Portfolio Details</a>
-                  </li>
-                </ul>
-              </li>
-              <li :class="{
-                        active: this.$route.path === '/contact',
-                      }">
-                                            <router-link class="drop-down" to="/contact">Contact Us</router-link>
-
-                    </li>
+             
+             
             </ul>
             <div class="d-lg-none d-block">
               <ul class="topbar-right">
@@ -353,7 +293,7 @@
               </svg>
               <span></span>
             </a>
-            <div class="sidebar-button mobile-menu-btn" @click="sidebar">
+            <div class="sidebar-button mobile-menu-btn" :class="btn" @click="sidebar">
               <span></span>
             </div>
           </div>
@@ -487,12 +427,12 @@
                       <ul>
                         <li><router-link to="/estate">Real Estate</router-link></li>
                         <li>
-                          <router-link to="/construction">Construction</router-link>
+                          <router-link to="/estate">Construction</router-link>
                         </li>
                         <li>
-                          <router-link to="/finnace">Finnace Service</router-link>
+                          <router-link to="/estate">Finnace Service</router-link>
                         </li>
-                        <li><router-link to="/dealership">Dealership</router-link></li>
+                        <li><router-link to="/estate">Dealership</router-link></li>
        
                       </ul>
                     </div>
@@ -509,9 +449,9 @@
                           <router-link to="/risk/disclosure">Privacy & Policy</router-link>
                         </li>
                         <li>
-                          <router-link to="/terms">Terms & Condition</router-link>
+                          <router-link to="/risk/disclosure">Terms & Condition</router-link>
                         </li>
-                        <li><router-link to="/cookie">Cookie Policy</router-link></li>
+                        <li><router-link to="/risk/disclosure">Cookie Policy</router-link></li>
                       </ul>
                     </div>
                   </div>
@@ -522,13 +462,13 @@
           <div class="col-lg-12 mb-10">
             <div class="footer-menu-wrap">
               <div class="footer-logo">
-                <a href="index.html"
-                  ><img src="./../assets/frontend/img/logo2.png" alt="footer-logo"
-                /></a>
+                <router-link to="/"
+                  ><img src="./../assets/frontend/img/logo1.png" alt="footer-logo"
+                /></router-link>
               </div>
               <ul class="footer-menu">
                 <li>
-                  <a href="services1.html"
+                  <router-link to="/servics"
                     >International Business
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -542,7 +482,7 @@
                         d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
                       />
                     </svg>
-                  </a>
+                  </router-link>
                 </li>
                 <li>
                   <a href="services1.html"
@@ -609,6 +549,7 @@
 import axios from "axios";
 import { isAuthenticated, logout } from "./../middleware/index";
 import { useAuthUserStore } from "./../stores/user";
+import router from "@/router";
 
 export default {
   components: {},
@@ -624,6 +565,13 @@ export default {
     sideShow() {
       if (this.showSidebar == true) {
         return "show-menu rotateInDownLeft ";
+      } else {
+        return "";
+      }
+    },
+    btn(){
+      if (this.showSidebar == true) {
+        return "active";
       } else {
         return "";
       }
@@ -656,6 +604,7 @@ export default {
         this.faqId = id;
       }
     },
+   
     sidebar() {
       if (this.showSidebar == true) {
         this.showSidebar = false;

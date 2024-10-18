@@ -97,6 +97,41 @@ Version: 1.0
 67. Case Study Details Page
 68. Industry Details Page
 ===========================*/
+
+
+
+
+
+
+
+
+.fade-transition {
+  transition: opacity 0.5s ease;
+}
+.bg {
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*===========================
      01.COMMON CSS 
 ===========================*/
@@ -6047,7 +6082,7 @@ body.tt-magic-cursor #magic-cursor {
  14. Home1 Contact Section
 ========================================*/
 .contact-section {
-  background-image: url(../img/home1/contact-bg.jpg);
+  background-image: url(./../assets/frontend/img/home1/contact-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;

@@ -2,7 +2,7 @@
 import HomeLayout from "./../Layouts/HomeLayout.vue";
 import lineChart from "./../components/lineChart.vue";
 
-import { Carousel, Slide} from "vue3-carousel";
+import { Carousel, Slide } from "vue3-carousel";
 
 import bannerImage from "@/assets/frontend/img/home2/banner-img-01.jpg";
 import bannerImage2 from "@/assets/frontend/img/home2/banner-img-03.jpg";
@@ -26,7 +26,7 @@ export default {
     Counter,
     Carousel,
     Slide,
-    lineChart
+    lineChart,
   },
 
   data() {
@@ -115,19 +115,18 @@ export default {
       ],
       currentSlide: 0, // Track the current slide index
 
-
       breakpoints: {
-      // 700px and up
-      700: {
-        itemsToShow: 1.5,
-        snapAlign: 'center',
+        // 700px and up
+        700: {
+          itemsToShow: 1.5,
+          snapAlign: "center",
+        },
+        // 1024 and up
+        1024: {
+          itemsToShow: 3,
+          snapAlign: "center",
+        },
       },
-      // 1024 and up
-      1024: {
-        itemsToShow: 3,
-        snapAlign: 'center',
-      },
-    },
     };
   },
 
@@ -146,8 +145,6 @@ export default {
     onSlideChange(newIndex) {
       this.currentSlide = newIndex.currentSlideIndex;
     },
-
-    
   },
 
   created() {
@@ -168,7 +165,6 @@ export default {
         :transition="1"
       >
         <Slide v-for="(slide, index) in slides" :key="index">
-
           <div
             class="banner-wrapper"
             :style="{
@@ -631,7 +627,6 @@ export default {
                       </svg>
                     </div>
                     <Counter :count="70" label="Professional Experts" />
-                    
                   </li>
                   <li class="single-counter">
                     <div class="icon">
@@ -1278,38 +1273,33 @@ export default {
             </a>
           </div>
           <div class="col-lg-12">
-            <div class="swiper project-slider" >
+            <div class="swiper project-slider">
               <Carousel
-                  class="swiper-wrapper"
-                  :wrapAround="true"
-                  :autoplay="4000"
-                  :breakpoints="breakpoints"
-            
-             
-
-              
+                class="swiper-wrapper"
+                :wrapAround="true"
+                :autoplay="4000"
+                :breakpoints="breakpoints"
+              >
+                <Slide
+                  class="swiper-slide"
+                  v-for="(project, index) in projects"
+                  :key="index"
                 >
-                  <Slide
-                    class="swiper-slide"
-                    v-for="(project, index) in projects"
-                    :key="index" 
-                  >
-                  <div class="project-card" style=" margin: 0 5px;">
+                  <div class="project-card" style="margin: 0 5px">
                     <div class="project-img">
-                      <img
-                        :src="project.imageSrc"
-                        alt
-                      />
+                      <img :src="project.imageSrc" alt />
                     </div>
                     <div class="project-content">
                       <div class="category-title">
                         <div class="category">
-                          <a href="portfolio-two-column.html">{{ project.categoryText }}</a>
+                          <a href="portfolio-two-column.html">{{
+                            project.categoryText
+                          }}</a>
                         </div>
                         <h4>
-                          <a href="portfolio-details.html"
-                            >{{project.titleText}}</a
-                          >
+                          <a href="portfolio-details.html">{{
+                            project.titleText
+                          }}</a>
                         </h4>
                       </div>
                       <a class="explore-btn" href="portfolio-details.html">
@@ -1329,14 +1319,13 @@ export default {
                       </a>
                     </div>
                   </div>
-                  </Slide>
-                </Carousel>
-              
-              </div>
+                </Slide>
+              </Carousel>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <div class="why-choose-section mb-130">
       <div class="container-fluid one pl--95">
@@ -1461,18 +1450,26 @@ export default {
               </div>
             </div>
           </div>
-          <div class="col-xl-5 d-flex align-items-end">
-            <div class="garph-content">
-              <div class="graph-chart">
-                <h6>Consulting Rate (in percentage)</h6>
-                
-                <lineChart />
-                <!-- <canvas id="consulting-chart" width="600" height="300"></canvas> -->
-              
-                
-              </div>
+          <div class="industry-details-graph-section" id="insdustryImpact">
+      <div class="container-fluid one pl--95">
+        <div class="row">
+          <div class="col-lg-12 mb-40">
+            <div class="section-title1 two">
+              <h2>Industry Impacts</h2>
             </div>
           </div>
+        </div>
+        <div class="why-choose-section">
+          <div class="garph-content">
+            <div class="graph-chart">
+              <h6>Consulting Rate (in percentage)</h6>
+
+              <lineChart />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
         </div>
       </div>
     </div>
@@ -1751,7 +1748,6 @@ export default {
         </div>
       </div>
     </div>
-
 
     <div class="blog-section2 mb-130">
       <div class="container-fluid one">
@@ -2142,18 +2138,4 @@ export default {
 
 
 <style scoped>
-.fade-transition {
-  transition: opacity 0.5s ease;
-}
-.bg {
-  animation: spin 10s linear infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 </style>
