@@ -5,22 +5,27 @@ import ServicesView from '../views/ServicesView.vue'
 import ContactView from '../views/ContactView.vue'
 import AboutView from '../views/AboutView.vue'
 import riskView from '../views/RiskView.vue'
-
+import consultantsView from '../views/consultants.vue'
+import estateView from '../views/estate.vue'
+import constructionView from '../views/construction.vue'
+import finnaceView from '../views/finnace.vue'
+import dealershipView from '../views/dealership.vue'
+import termsView from '../views/terms.vue'
+import cookieView from '../views/cookie.vue'
+import storyView from '../views/story.vue'
+import faqView from '../views/faq.vue'
 import LeadView from '../views/LeadView.vue'
 
 // user
 
 import DeshboardView from '../views/Deshboard/DeshboardView.vue'
-// import UserView from '../views/Deshboard/UserView.vue'
 import KycView from '../views/Deshboard/KycView.vue'
 import DepositView from '../views/Deshboard/DepositView.vue'
 import WithdrawView from '../views/Deshboard/WithdrawView.vue'
 import depositLog from '../views/Deshboard/depositLog.vue'
 
 import withdrawLog from '../views/Deshboard/withdrawLog.vue'
-// import EconomicView from '../views/Deshboard/EconomicView.vue'
 import TransactionView from '../views/Deshboard/TransactionView.vue'
-// import PaymentDetailsView from '../views/Deshboard/PaymentDetailsView.vue'
 import AccountView from '../views/Deshboard/AccountView.vue'
 import ChangeView from '../views/Deshboard/ChangeView.vue'
 
@@ -123,14 +128,88 @@ const router = createRouter({
       component:riskView,
  
     },
+    
     {
-      path: '/leads',
-      name: 'info',
+      path: '/consultants',
+      name: 'consultants',
   
-      component:LeadView,
+      component:consultantsView,
  
     },
-    
+    {
+      path: '/estate',
+      name: 'estate',
+  
+      component:estateView,
+ 
+    },
+    {
+      path: '/construction',
+      name: 'construction',
+  
+      component:constructionView,
+ 
+    },
+    {
+      path: '/finnace',
+      name: 'finnace',
+  
+      component:finnaceView,
+ 
+    },
+    {
+      path: '/dealership',
+      name: 'dealership',
+  
+      component:dealershipView,
+ 
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+  
+      component:termsView,
+ 
+    },
+    {
+      path: '/cookie',
+      name: 'cookie',
+  
+      component:cookieView,
+ 
+    },
+    {
+      path: '/story',
+      name: 'story',
+  
+      component:storyView,
+ 
+    },
+    {
+      path: '/faq',
+      name: 'faq',
+  
+      component:faqView,
+ 
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     // user Deshboard--------------------------------------------------
@@ -152,24 +231,7 @@ const router = createRouter({
         requiresAuth:true,
       },
     },
-    // {
-    //   path: '/profile',
-    //   name: 'profile',
-
-    //   component:UserView,
-    //   meta:{
-    //     requiresAuth:true,
-    //   },
-    // },
-    // {
-    //   path: '/economic',
-    //   name: 'economic',
-
-    //   component:EconomicView,
-    //   meta:{
-    //     requiresAuth:true,
-    //   },
-    // },
+    
     {
       path: '/deposit',
       name: 'deposit',
@@ -216,15 +278,7 @@ const router = createRouter({
         requiresAuth:true,
       },
     },
-    // {
-    //   path: '/payment/details',
-    //   name: 'payment',
 
-    //   component:PaymentDetailsView,
-    //   meta:{
-    //     requiresAuth:true,
-    //   },
-    // },
     {
       path: '/account',
       name: 'account',
