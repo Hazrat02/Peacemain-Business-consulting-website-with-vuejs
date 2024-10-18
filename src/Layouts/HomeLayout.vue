@@ -469,12 +469,11 @@
                     </div>
                     <div class="menu-container">
                       <ul>
-                        <li><a href="about.html">Our Story</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="faq.html">FAQ’s</a></li>
-                        <li><a href="our-people1.html">Our Consultants</a></li>
-                        <li><a href="career.html">Careers</a></li>
-                        <li><a href="case-study1.html">Case Study</a></li>
+                        <li><router-link to="/story">Our Story</router-link></li>
+                        <li><router-link to="/contact">Contact Us</router-link></li>
+                        <li><router-link to="/faq">FAQ’s</router-link></li>
+                        <li><router-link to="/consultants">Our Consultants</router-link></li>
+                        <li><router-link to="/careers">Careers</router-link></li>
                       </ul>
                     </div>
                   </div>
@@ -486,21 +485,15 @@
                     </div>
                     <div class="menu-container">
                       <ul>
-                        <li><a href="industry-details.html">Real Estate</a></li>
+                        <li><router-link to="/estate">Real Estate</router-link></li>
                         <li>
-                          <a href="industry-details.html">Construction</a>
-                        </li>
-                        <li><a href="industry-details.html">Health Care</a></li>
-                        <li>
-                          <a href="industry-details.html">Finnace Service</a>
-                        </li>
-                        <li><a href="industry-details.html">Dealership</a></li>
-                        <li>
-                          <a href="industry-details.html">Low Firm Service</a>
+                          <router-link to="/construction">Construction</router-link>
                         </li>
                         <li>
-                          <a href="industry-details.html">Family Business</a>
+                          <router-link to="/finnace">Finnace Service</router-link>
                         </li>
+                        <li><router-link to="/dealership">Dealership</router-link></li>
+       
                       </ul>
                     </div>
                   </div>
@@ -513,12 +506,12 @@
                     <div class="menu-container">
                       <ul>
                         <li>
-                          <a href="terms-conditions.html">Privacy & Policy</a>
+                          <router-link to="/risk/disclosure">Privacy & Policy</router-link>
                         </li>
                         <li>
-                          <a href="terms-conditions.html">Terms & Condition</a>
+                          <router-link to="/terms">Terms & Condition</router-link>
                         </li>
-                        <li><a href="#">Cookie Policy</a></li>
+                        <li><router-link to="/cookie">Cookie Policy</router-link></li>
                       </ul>
                     </div>
                   </div>

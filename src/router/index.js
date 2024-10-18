@@ -14,6 +14,7 @@ import termsView from '../views/terms.vue'
 import cookieView from '../views/cookie.vue'
 import storyView from '../views/story.vue'
 import faqView from '../views/faq.vue'
+import careersView from '../views/careers.vue'
 import LeadView from '../views/LeadView.vue'
 
 // user
@@ -190,6 +191,13 @@ const router = createRouter({
       name: 'faq',
   
       component:faqView,
+ 
+    },
+    {
+      path: '/careers',
+      name: 'careers',
+  
+      component:careersView,
  
     },
 
