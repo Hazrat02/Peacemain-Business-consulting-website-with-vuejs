@@ -2,7 +2,7 @@
 import HomeLayout from "./../Layouts/HomeLayout.vue";
 import lineChart from "./../components/lineChart.vue";
 
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import { Carousel, Slide} from "vue3-carousel";
 
 import bannerImage from "@/assets/frontend/img/home2/banner-img-01.jpg";
 import bannerImage2 from "@/assets/frontend/img/home2/banner-img-03.jpg";
@@ -631,6 +631,7 @@ export default {
                       </svg>
                     </div>
                     <Counter :count="70" label="Professional Experts" />
+                    
                   </li>
                   <li class="single-counter">
                     <div class="icon">
@@ -1751,48 +1752,6 @@ export default {
       </div>
     </div>
 
-    <div class="client-section mb-130">
-      <div class="container-fluid one">
-        <div class="col-lg-12 pl--95 pr--95">
-          <div class="client-logo-wrap">
-            <div class="marque-wrap">
-              <div class="marquee_text2">
-                <a href="#"
-                  ><img
-                    src="./../assets/frontend/img/home2/client-logo1.png"
-                    alt
-                /></a>
-                <a href="#"
-                  ><img
-                    src="./../assets/frontend/img/home2/client-logo2.png"
-                    alt
-                /></a>
-                <a href="#"
-                  ><img
-                    src="./../assets/frontend/img/home2/client-logo3.png"
-                    alt
-                /></a>
-                <a href="#"
-                  ><img
-                    src="./../assets/frontend/img/home2/client-logo4.png"
-                    alt
-                /></a>
-                <a href="#"
-                  ><img
-                    src="./../assets/frontend/img/home2/client-logo5.png"
-                    alt
-                /></a>
-                <a href="#"
-                  ><img
-                    src="./../assets/frontend/img/home2/client-logo6.png"
-                    alt
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="blog-section2 mb-130">
       <div class="container-fluid one">
@@ -2137,7 +2096,7 @@ export default {
             class="col-lg-6 d-flex align-items-center justify-content-lg-center"
           >
             <div class="banner-btn magnetic-item">
-              <a href="contact.html">
+              <router-link to="/contact">
                 <div class="bg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -2171,7 +2130,7 @@ export default {
                   Contact Us <br />
                   Now
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -2185,5 +2144,16 @@ export default {
 <style scoped>
 .fade-transition {
   transition: opacity 0.5s ease;
+}
+.bg {
+  animation: spin 10s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>

@@ -69,7 +69,7 @@
       <header class="header-area style-2">
         <div class="header-logo">
           <a href="index.html"
-            ><img alt="image" class="img-fluid" src="./../assets/frontend/img/logo.svg"
+            ><img style="width: 250px;" alt="image" class="img-fluid" src="./../assets/frontend/img/logo1.png"
           /></a>
         </div>
         <div class="menu-wrap">
@@ -79,31 +79,24 @@
             >
               <div class="mobile-logo-wrap">
                 <a href="index.html"
-                  ><img alt="image" src="./../assets/frontend/img/logo.svg"
+                  ><img alt="image" src="./../assets/frontend/img/logo1.png"
                 /></a>
               </div>
             </div>
-            <ul class="menu-list">
-              <li class="menu-item-has-children active">
-                <a href="#" class="drop-down">Home</a
-                ><i class="bi bi-plus dropdown-icon"></i>
-                <ul class="sub-menu">
-                  <li><a href="index.html">Home 01</a></li>
-                  <li class="active"><a href="index2.html">Home 02</a></li>
-                  <li><a href="index3.html">Home 03</a></li>
-                  <li><a href="index4.html">Home 04</a></li>
-                  <li><a href="index5.html">Home 05</a></li>
-                  <li><a href="index6.html">Home 06</a></li>
-                </ul>
+            <ul class="menu-list"> 
+              <li class="menu-item-has-children" :class="{
+                        active: this.$route.path === '/',
+                      }"
+                      >
+                <router-link class="drop-down" to="/">Home</router-link>
+                <!-- <a href="#" class="drop-down">Home</a> -->
+               
               </li>
-              <li class="menu-item-has-children">
-                <a href="#" class="drop-down">Services</a
-                ><i class="bi bi-plus dropdown-icon"></i>
-                <ul class="sub-menu">
-                  <li><a href="services1.html">Service Style 01</a></li>
-                  <li><a href="service2.html">Service Style 02</a></li>
-                  <li><a href="service-details.html ">Service Details</a></li>
-                </ul>
+              <li class="menu-item-has-children" :class="{
+                        active: this.$route.path === '/servics',
+                      }">
+                      <router-link class="drop-down" to="/servics">Services</router-link>
+          
               </li>
               <li class="menu-item-has-children">
                 <a href="#" class="drop-down">Pages</a
@@ -206,7 +199,12 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li :class="{
+                        active: this.$route.path === '/contact',
+                      }">
+                                            <router-link class="drop-down" to="/contact">Contact Us</router-link>
+
+                    </li>
             </ul>
             <div class="d-lg-none d-block">
               <ul class="topbar-right">
@@ -528,11 +526,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12 mb-10">
             <div class="footer-menu-wrap">
               <div class="footer-logo">
                 <a href="index.html"
-                  ><img src="./../assets/frontend/img/logo.svg" alt="footer-logo"
+                  ><img src="./../assets/frontend/img/logo2.png" alt="footer-logo"
                 /></a>
               </div>
               <ul class="footer-menu">
@@ -604,72 +602,10 @@
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="services1.html"
-                    >Technology
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="services1.html"
-                    >Start-up
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
+               
               </ul>
             </div>
-            <div class="footer-btm">
-              <div class="copyright-area">
-                <p>
-                  Copyright 2023 <a href="#">Aploxn</a> | Design By
-                  <a href="https://www.egenslab.com/">Egens Lab</a>
-                </p>
-              </div>
-              <ul class="social-area">
-                <li>
-                  <a href="https://www.facebook.com/"
-                    ><i class="bx bxl-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/"
-                    ><i class="bx bxl-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/"
-                    ><i class="bx bxl-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/"
-                    ><i class="bx bxl-instagram-alt"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -758,5 +694,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+
+
+
+
 </style>

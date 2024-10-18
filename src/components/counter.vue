@@ -2,7 +2,7 @@
     <div class="content" ref="counterSection">
       <div class="number">
         <h2 class="counter">{{ displayValue }}</h2>
-        <span>+</span>
+        <span>{{ extra }}</span>
       </div>
       <p>{{ label }}</p>
     </div>
@@ -14,6 +14,10 @@
       count: {
         type: Number,
         required: true
+      },
+      extra: {
+        type: Number,
+        default:'+',
       },
       label: {
         type: String,

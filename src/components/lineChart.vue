@@ -196,7 +196,7 @@ export default {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  width: 100vW;
+  width: 100%;
 }
 
 .chart {
