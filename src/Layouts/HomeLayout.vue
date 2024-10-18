@@ -73,7 +73,7 @@
           /></a>
         </div>
         <div class="menu-wrap">
-          <div class="main-menu">
+          <div class="main-menu" :class="sideShow">
             <div
               class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center"
             >
@@ -353,7 +353,7 @@
               </svg>
               <span></span>
             </a>
-            <div class="sidebar-button mobile-menu-btn">
+            <div class="sidebar-button mobile-menu-btn" @click="sidebar">
               <span></span>
             </div>
           </div>
@@ -630,7 +630,7 @@ export default {
     // Calculate the total number of pages based on the total number of items and itemsPerPage
     sideShow() {
       if (this.showSidebar == true) {
-        return "sidebar rotateInDownLeft ";
+        return "show-menu rotateInDownLeft ";
       } else {
         return "";
       }
