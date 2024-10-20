@@ -2,7 +2,7 @@
 <script>
 import HomeLayout from "@/Layouts/HomeLayout.vue";
 // import axios from 'axios';
-import bannerImage from "@/assets/frontend/img/inner-pages/braadcrumb-bg6.jpg";
+import bannerImage from "@/assets/frontend/img/inner-pages/braadcrumb-bg7.jpg";
 import Counter from "@/components/counter.vue";
 
 export default {
@@ -29,26 +29,26 @@ export default {
 
 
       <div
-        class="breadcrumb-section"
-        :style="{
-      backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55) 101.02%), url(${bannerImage})`
-    }"
-      >
-        <div class="company-name">Aploxn</div>
-        <div class="container-fluid one pl--95">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="banner-content">
-                <h1>Health & Care</h1>
-                <ul class="breadcrumb-list">
-                  <li><a href="index.html">Home</a></li>
-                  <li>Health & Care</li>
-                </ul>
-              </div>
+      class="breadcrumb-section"
+      :style="{
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(${bannerImage})`,
+      }"
+    >
+      <div class="company-name">Peacemain</div>
+      <div class="container-fluid one pl--95">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner-content">
+              <h1>Our Services</h1>
+              <ul class="breadcrumb-list">
+                <li><router-link to="/">Home</router-link></li>
+                <li>services</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
       <div class="service-details-wrapper pt-130 mb-130">
         <div class="container-fluid one pl--95">

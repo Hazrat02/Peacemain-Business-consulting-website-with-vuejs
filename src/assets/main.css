@@ -13986,7 +13986,6 @@ footer .footer-btm .social-area li a:hover i {
   font-family: bootstrap-icons !important;
   position: absolute;
   right: 17px;
-  content: "\f123";
   transition: unset;
   font-size: 17px;
   width: 30px;
@@ -14007,9 +14006,7 @@ footer .footer-btm .social-area li a:hover i {
 .faq-wrap .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   background-image: none;
   transform: unset;
-  font-family: bootstrap-icons !important;
-  content: "\f128";
-  color: var(--primary-color);
+  font-family: bootstrap-icons !important;  color: var(--primary-color);
 }
 .faq-wrap .accordion .accordion-item .accordion-header .accordion-button:focus {
   border: transparent;

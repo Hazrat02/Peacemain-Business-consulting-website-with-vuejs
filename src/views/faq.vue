@@ -3,11 +3,11 @@
     <div
       class="breadcrumb-section"
       :style="{
-              backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(${bannerImage})`,
-            }"
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(${bannerImage})`,
+      }"
     >
-    <div class="company-name">Peacemain</div>
-    <div class="container-fluid one pl--95">
+      <div class="company-name">Peacemain</div>
+      <div class="container-fluid one pl--95">
         <div class="row">
           <div class="col-lg-12">
             <div class="banner-content">
@@ -32,25 +32,25 @@
           </div>
           <div class="col-lg-8">
             <div class="faq-wrap">
-              <div class="accordion" id="accordionExample">
+              <div class="accordion">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      What is health and care consulting?
+                  <h2
+                    class="accordion-header"
+                  >
+                    <button class="accordion-button  d-flex justify-content-between align-content-center" @click="faq(1)">
+                      <span> What is health and care consulting? </span>
+                      <span class="">
+                        <i class="fa" :class="{
+                      'fa-minus': faqId == 1,'fa-plus': faqId != 1
+                    }"></i>
+                      </span>
                     </button>
                   </h2>
                   <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
+                    class="accordion-collapse collapse"
+                    :class="{
+                      show: faqId == 1,
+                    }"
                   >
                     <div class="accordion-body">
                       Health and care consulting is a specialized service that
@@ -61,22 +61,22 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Why do healthcare organizations need consulting services?
+                    <button class="accordion-button  d-flex justify-content-between align-content-center" 
+                    @click="faq(2)">
+                      <span> What is health and care consulting? </span>
+                      <span class="">
+                        <i class="fa" :class="{
+                      'fa-minus': faqId == 2,'fa-plus': faqId != 2
+                    }"></i>
+                      </span>
                     </button>
                   </h2>
                   <div
                     id="collapseTwo"
                     class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
+                    :class="{
+                      show: faqId == 2,
+                    }"
                   >
                     <div class="accordion-body">
                       Health and care consulting is a specialized service that
@@ -87,22 +87,22 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      What types of consulting services do you offer?
+                    <button class="accordion-button  d-flex justify-content-between align-content-center" 
+                    @click="faq(3)">
+                      <span> What is health and care consulting? </span>
+                      <span class="">
+                        <i class="fa" :class="{
+                      'fa-minus': faqId == 3,'fa-plus': faqId != 3
+                    }"></i>
+                      </span>
                     </button>
                   </h2>
                   <div
                     id="collapseThree"
                     class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
+                    :class="{
+                      show: faqId == 3,
+                    }"
                   >
                     <div class="accordion-body">
                       Health and care consulting is a specialized service that
@@ -113,22 +113,22 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      How do you measure the success of a consulting project?
+                    <button class="accordion-button  d-flex justify-content-between align-content-center" 
+                    @click="faq(4)">
+                      <span> What is health and care consulting? </span>
+                      <span class="">
+                        <i class="fa" :class="{
+                      'fa-minus': faqId == 4,'fa-plus': faqId != 4
+                    }"></i>
+                      </span>
                     </button>
                   </h2>
                   <div
                     id="collapseFour"
                     class="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample"
+                    :class="{
+                      show: faqId == 4,
+                    }"
                   >
                     <div class="accordion-body">
                       Health and care consulting is a specialized service that
@@ -139,22 +139,22 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFive">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      What is the process of selling a home?
+                    <button class="accordion-button  d-flex justify-content-between align-content-center" 
+                    @click="faq(5)">
+                      <span> What is health and care consulting? </span>
+                      <span class="">
+                        <i class="fa" :class="{
+                      'fa-minus': faqId == 5,'fa-plus': faqId != 5
+                    }"></i>
+                      </span>
                     </button>
                   </h2>
                   <div
                     id="collapseFive"
                     class="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample"
+                    :class="{
+                      show: faqId == 5,
+                    }"
                   >
                     <div class="accordion-body">
                       Health and care consulting is a specialized service that
@@ -165,23 +165,22 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSix">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseSix"
-                      aria-expanded="false"
-                      aria-controls="collapseSix"
-                    >
-                      What are the typical outcomes of a consulting engagement
-                      in healthcare?
+                    <button class="accordion-button  d-flex justify-content-between align-content-center" 
+                    @click="faq(6)">
+                      <span> What is health and care consulting? </span>
+                      <span class="">
+                        <i class="fa" :class="{
+                      'fa-minus': faqId == 6,'fa-plus': faqId != 6
+                    }"></i>
+                      </span>
                     </button>
                   </h2>
                   <div
                     id="collapseSix"
                     class="accordion-collapse collapse"
-                    aria-labelledby="headingSix"
-                    data-bs-parent="#accordionExample"
+                    :class="{
+                      show: faqId == 6,
+                    }"
                   >
                     <div class="accordion-body">
                       Health and care consulting is a specialized service that
@@ -190,33 +189,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingSeven">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseSeven"
-                      aria-expanded="false"
-                      aria-controls="collapseSeven"
-                    >
-                      What are the typical outcomes of a consulting engagement
-                      in healthcare?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseSeven"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingSeven"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Health and care consulting is a specialized service that
-                      provides advisory and support to healthcare organizations
-                      and stakeholders to improve operations, patient care.
-                    </div>
-                  </div>
-                </div>
+              
               </div>
             </div>
           </div>
@@ -236,7 +209,7 @@
             class="col-lg-6 d-flex align-items-center justify-content-lg-center"
           >
             <div class="banner-btn magnetic-item">
-              <a href="contact.html">
+              <router-link to="/contact">
                 <div class="bg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +243,7 @@
                   Contact Us <br />
                   Now
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -289,8 +262,20 @@ export default {
   },
   data() {
     return {
-      bannerImage
+      faqId: 1,
+      bannerImage,
     };
+  },
+  methods: {
+    faq(id) {
+      if (id === this.faqId) {
+        this.faqId = 0;
+      } else {
+        this.faqId = id;
+      }
+
+      console.log("dsf", this.faqId);
+    },
   },
 };
 </script>

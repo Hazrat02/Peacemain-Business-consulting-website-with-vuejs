@@ -114,32 +114,21 @@
                 <a href="#" class="drop-down">More</a
                 ><i class="fa fa-caret-down"></i>
                 <ul class="sub-menu">
-                  <li><a href="about.html">about</a></li>
-                  <li><a href="industry-details.html">Industry Details</a></li>
+           
+                  <li><router-link to="/estate" >Industry Details</router-link></li>
+        
                   <li>
-                    <a href="case-study1.html">Case Study</a>
-       
-                  </li>
-                  <li>
-                    <a href="our-people1.html">Our People</a>
+                    <router-link to="/consultants">Our People</router-link>
                     
                     
                   </li>
+                  
+                  <li><router-link to="/careers">Career opportunity</router-link></li>
+         
+                  <li><router-link to="/faq">FAQs</router-link></li>
+             
                   <li>
-                    <a href="blog-standard.html">News & Insight</a>
-                    
-                  </li>
-                  <li>
-                    <a href="event.html">Event</a>
-                    
-                  </li>
-                  <li><a href="career.html">Career opportunity</a></li>
-                  <li><a href="apply-position.html">Apply Position</a></li>
-                  <li><a href="pricing.html">Pricing</a></li>
-                  <li><a href="faq.html">FAQs</a></li>
-                  <li><a href="error.html">Error 404</a></li>
-                  <li>
-                    <a href="terms-conditions.html">Terms & Conditions</a>
+                    <router-link to="/risk/disclosure">Terms & Conditions</router-link>
                   </li>
                 </ul>
               </li>
