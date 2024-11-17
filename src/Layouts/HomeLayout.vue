@@ -19,14 +19,12 @@
         <ul class="topbar-left">
           <li><router-link to="/careers">Careers</router-link></li>
           <li><router-link to="/contact">Join Us</router-link></li>
-          <li><router-link to="/consultants">Consultants</router-link></li>
+          <li><router-link to="/consultants">Our Team</router-link></li>
         </ul>
         <ul class="topbar-right">
-          <li>Sun-Tue (9:00 am-7.00 pm)</li>
+          <li>Mon-Fri (10:30AM - 6:00PM)</li>
           <li>
-            <a
-              href="/cdn-cgi/l/email-protection#a3cacdc5ccc2d3cfccdbcde3c4cec2cacf8dc0ccce"
-            >
+            <a href="mailto:info@peacemain.com">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -39,15 +37,11 @@
                   />
                 </g>
               </svg>
-              <span
-                class="__cf_email__"
-                data-cfemail="9bf2f5fdf4faebf7f4e3f5dbfcf6faf2f7b5f8f4f6"
-                >[email&#160;protected]</span
-              >
+              <span class="__cf_email__">info@peacemain.com</span>
             </a>
           </li>
           <li>
-            <a href="tel:+9165678653">
+            <a href="tel:+918123781857">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -60,7 +54,7 @@
                   />
                 </g>
               </svg>
-              +91 656 786 53
+              +91-8123781857
             </a>
           </li>
         </ul>
@@ -68,8 +62,12 @@
 
       <header class="header-area style-2">
         <div class="header-logo">
-           <router-link to="/"
-            ><img style="width: 250px;" alt="image" class="img-fluid" src="./../assets/frontend/img/logo1.png"
+          <router-link to="/"
+            ><img
+              style="width: 250px"
+              alt="image"
+              class="img-fluid"
+              src="./../assets/frontend/img/logo1.png"
           /></router-link>
         </div>
         <div class="menu-wrap">
@@ -83,65 +81,76 @@
                 /></router-link>
               </div>
             </div>
-            <ul class="menu-list"> 
-              <li class="" :class="{
-                        active: this.$route.path === '/',
-                      }"
-                      >
+            <ul class="menu-list">
+              <li
+                class=""
+                :class="{
+                  active: this.$route.path === '/',
+                }"
+              >
                 <router-link class="drop-down" to="/">Home</router-link>
-               
               </li>
-              <li class="" :class="{
-                        active: this.$route.path === '/servics',
-                      }">
-                      <router-link class="drop-down" to="/servics">Services</router-link>
-          
+              <li
+                class=""
+                :class="{
+                  active: this.$route.path === '/servics',
+                }"
+              >
+                <router-link class="drop-down" to="/servics"
+                  >Services</router-link
+                >
               </li>
-              <li class="" :class="{
-                        active: this.$route.path === '/about',
-                      }">
-                      <router-link class="drop-down" to="/about">About Us</router-link>
-          
+              <li
+                class=""
+                :class="{
+                  active: this.$route.path === '/about',
+                }"
+              >
+                <router-link class="drop-down" to="/about"
+                  >About Us</router-link
+                >
               </li>
-              <li :class="{
-                        active: this.$route.path === '/contact',
-                      }">
-                                            <router-link class="drop-down" to="/contact">Contact Us</router-link>
-
-                    </li>
+              <li
+                :class="{
+                  active: this.$route.path === '/contact',
+                }"
+              >
+                <router-link class="drop-down" to="/contact"
+                  >Contact Us</router-link
+                >
+              </li>
 
               <li class="menu-item-has-children">
                 <a href="#" class="drop-down">More</a
                 ><i class="fa fa-caret-down"></i>
                 <ul class="sub-menu">
-           
-                  <li><router-link to="/estate" >Industry Details</router-link></li>
-        
+                  <li>
+                    <router-link to="/estate">Industry Details</router-link>
+                  </li>
+
                   <li>
                     <router-link to="/consultants">Our People</router-link>
-                    
-                    
                   </li>
-                  
-                  <li><router-link to="/careers">Career opportunity</router-link></li>
-         
-                  <li><router-link to="/faq">FAQs</router-link></li>
-             
+
                   <li>
-                    <router-link to="/risk/disclosure">Terms & Conditions</router-link>
+                    <router-link to="/careers">Career opportunity</router-link>
+                  </li>
+
+                  <li><router-link to="/faq">FAQs</router-link></li>
+
+                  <li>
+                    <router-link to="/risk/disclosure"
+                      >Terms & Conditions</router-link
+                    >
                   </li>
                 </ul>
               </li>
-             
-             
             </ul>
             <div class="d-lg-none d-block">
               <ul class="topbar-right">
-                <li>Sun-Tue (9:00 am-7.00 pm)</li>
+                <li>Mon-Fri (10:30AM - 6:00PM)</li>
                 <li>
-                  <a
-                    href="/cdn-cgi/l/email-protection#c5acaba3aaa4b5a9aabdab85a2a8a4aca9eba6aaa8"
-                  >
+                  <a href="mailto:info@peacemain.com">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -154,15 +163,11 @@
                         />
                       </g>
                     </svg>
-                    <span
-                      class="__cf_email__"
-                      data-cfemail="96fff8f0f9f7e6faf9eef8d6f1fbf7fffab8f5f9fb"
-                      >[email&#160;protected]</span
-                    >
+                    <span class="__cf_email__">info@peacemain.com</span>
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+9165678653">
+                  <a href="tel:+918123781857">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -175,12 +180,12 @@
                         />
                       </g>
                     </svg>
-                    +91 656 786 53
+                    +91-8123781857
                   </a>
                 </li>
               </ul>
-              <a href="contact.html" class="primary-btn1 btn-hover">
-                Get in Touch
+              <router-link to="/careers#viewJob" class="primary-btn1 btn-hover">
+                Apply Position
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="12"
@@ -194,7 +199,7 @@
                   ></path>
                 </svg>
                 <span style="top: 232.625px; left: 96.7812px"></span>
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="nav-right d-flex jsutify-content-end align-items-center">
@@ -224,50 +229,12 @@
                       </button>
                     </div>
                   </div>
-                  <div class="quick-search">
-                    <ul>
-                      <li>Quick Search :</li>
-                      <li><a href="service.html">Technology,</a></li>
-                      <li><a href="service.html">Finance consulting,</a></li>
-                      <li><a href="service.html">Human Resources,</a></li>
-                      <li><a href="service.html">Management,</a></li>
-                      <li><a href="service.html">Marketing Research,</a></li>
-                      <li>
-                        <a href="service-details.html"
-                          >International Business.</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
                 </form>
               </div>
             </div>
-            <div class="search-bar d-xl-flex d-none">
-              <div class="lang-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8ZM7.5 1.077C6.83 1.281 6.165 1.897 5.613 2.932C5.43113 3.2761 5.27471 3.63305 5.145 4H7.5V1.077ZM4.09 4C4.25667 3.46882 4.47087 2.95373 4.73 2.461C4.90291 2.13406 5.10259 1.82199 5.327 1.528C4.088 2.04183 3.02201 2.89962 2.255 4H4.09ZM3.508 7.5C3.538 6.623 3.646 5.782 3.82 5H1.674C1.30112 5.78505 1.07861 6.63301 1.018 7.5H3.508ZM4.847 5C4.65032 5.8198 4.53707 6.6574 4.509 7.5H7.5V5H4.847ZM8.5 5V7.5H11.49C11.4623 6.65743 11.3494 5.81983 11.153 5H8.5ZM4.51 8.5C4.53774 9.34257 4.65065 10.1802 4.847 11H7.5V8.5H4.51ZM8.5 8.5V11H11.153C11.34 10.235 11.459 9.392 11.491 8.5H8.5ZM5.145 12C5.283 12.386 5.44 12.744 5.613 13.068C6.165 14.103 6.831 14.718 7.5 14.923V12H5.145ZM5.327 14.472C5.10257 14.178 4.90289 13.866 4.73 13.539C4.47088 13.0463 4.25668 12.5312 4.09 12H2.255C3.02196 13.1004 4.08797 13.9582 5.327 14.472ZM3.82 11C3.63916 10.1781 3.53472 9.34117 3.508 8.5H1.018C1.08 9.39 1.309 10.233 1.674 11H3.82ZM10.673 14.472C11.912 13.9582 12.978 13.1004 13.745 12H11.91C11.7433 12.5312 11.5291 13.0463 11.27 13.539C11.0971 13.866 10.8975 14.178 10.673 14.472ZM8.5 12V14.923C9.17 14.719 9.835 14.103 10.387 13.068C10.56 12.744 10.717 12.386 10.855 12H8.5ZM12.18 11H14.326C14.691 10.233 14.92 9.39 14.982 8.5H12.492C12.4653 9.34117 12.3608 10.1781 12.18 11ZM14.982 7.5C14.9214 6.63301 14.6989 5.78506 14.326 5H12.18C12.354 5.782 12.462 6.623 12.492 7.5H14.982ZM11.27 2.461C11.517 2.925 11.732 3.441 11.91 4H13.745C12.978 2.89958 11.912 2.04178 10.673 1.528C10.891 1.812 11.091 2.126 11.27 2.461ZM10.855 4C10.7253 3.63305 10.5689 3.27609 10.387 2.932C9.835 1.897 9.17 1.282 8.5 1.077V4H10.855Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <ul class="lang-card">
-                <li><a href="#">English</a></li>
-                <li><a href="#">Deutsch</a></li>
-                <li><a href="#">Svenska</a></li>
-                <li><a href="#">اردو</a></li>
-                <li><a href="#">عربي</a></li>
-                <li><a href="#">Nederlands</a></li>
-              </ul>
-            </div>
-            <a href="contact.html" class="primary-btn2 btn-hover">
-              Get in Touch
+
+            <router-link to="/careers#viewJob" class="primary-btn2 btn-hover">
+              Apply Position
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
@@ -281,8 +248,12 @@
                 />
               </svg>
               <span></span>
-            </a>
-            <div class="sidebar-button mobile-menu-btn" :class="btn" @click="sidebar">
+            </router-link>
+            <div
+              class="sidebar-button mobile-menu-btn"
+              :class="btn"
+              @click="sidebar"
+            >
               <span></span>
             </div>
           </div>
@@ -290,7 +261,7 @@
       </header>
     </div>
 
-   <slot />
+    <slot />
 
     <footer>
       <div class="container-fluid one">
@@ -301,24 +272,13 @@
                 <div class="col-lg-4 col-md-8 d-flex justify-content-lg-start">
                   <div class="footer-widget">
                     <div class="subscribed-area">
-                      <h2>Don’t Missed Subscribed!</h2>
-                      <form>
-                        <div class="form-inner">
-                          <input type="text" placeholder="Enter Email" />
-                          <button type="submit">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                d="M15.9647 0.685806C16.0011 0.594942 16.01 0.495402 15.9904 0.399526C15.9707 0.303649 15.9233 0.215653 15.8541 0.146447C15.7849 0.0772403 15.6969 0.0298668 15.601 0.0101994C15.5052 -0.0094681 15.4056 -0.000564594 15.3147 0.0358061L0.76775 5.85481H0.76675L0.31475 6.03481C0.22914 6.06895 0.154635 6.1261 0.0994654 6.19994C0.0442956 6.27377 0.0106078 6.36142 0.00212322 6.4532C-0.00636132 6.54497 0.0106876 6.63731 0.0513867 6.72001C0.0920859 6.8027 0.154851 6.87254 0.23275 6.92181L0.64275 7.18181L0.64375 7.18381L5.63875 10.3618L8.81675 15.3568L8.81875 15.3588L9.07875 15.7688C9.12817 15.8464 9.19805 15.9089 9.28068 15.9493C9.36332 15.9897 9.45551 16.0066 9.54711 15.998C9.63871 15.9894 9.72617 15.9558 9.79985 15.9007C9.87354 15.8456 9.9306 15.7712 9.96475 15.6858L15.9647 0.685806ZM14.1317 2.57581L6.63775 10.0698L6.42275 9.73181C6.38336 9.66978 6.33078 9.6172 6.26875 9.57781L5.93075 9.36281L13.4247 1.86881L14.6027 1.39781L14.1327 2.57581H14.1317Z"
-                              />
-                            </svg>
-                          </button>
-                        </div>
-                      </form>
+                      <div class="footer-logo">
+                        <router-link to="/"
+                          ><img
+                            src="./../assets/frontend/img/logo1.png"
+                            alt="footer-logo"
+                        /></router-link>
+                      </div>
                     </div>
                     <div class="contact-area">
                       <div class="hotline-area">
@@ -343,7 +303,7 @@
                         <div class="content">
                           <span>To More Inquiry</span>
                           <h6>
-                            <a href="tel:+990737621432">+990-737 621 432</a>
+                            <a href="tel:+990737621432"> +91-8123781857 </a>
                           </h6>
                         </div>
                       </div>
@@ -375,14 +335,23 @@
                         <div class="content">
                           <span>To Send Mail</span>
                           <h6>
-                            <a
-                              href="/cdn-cgi/l/email-protection#0a63646c654a6d676b636624696567"
-                              ><span
-                                class="__cf_email__"
-                                data-cfemail="e58c8b838aa58288848c89cb868a88"
-                                >[email&#160;protected]</span
-                              ></a
-                            >
+                            <a href="mailto:info@peacemain.com">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14"
+                                height="10"
+                                viewBox="0 0 14 10"
+                              >
+                                <g>
+                                  <path
+                                    d="M12.8333 0H1.16668C0.523223 0 0 0.498307 0 1.11112V8.88891C0 9.50169 0.523223 10 1.16668 10H12.8334C13.4768 10 14 9.50169 14 8.88888V1.11112C14 0.498307 13.4768 0 12.8333 0ZM1.16668 0.555547H12.8334C12.8763 0.555547 12.9142 0.570469 12.9545 0.578906C11.9445 1.4593 8.59532 4.37732 7.42328 5.38302C7.33157 5.46169 7.18375 5.55555 7.00003 5.55555C6.8163 5.55555 6.66848 5.46169 6.57647 5.38276C5.40455 4.37721 2.05518 1.45904 1.0453 0.578958C1.08571 0.570521 1.12366 0.555547 1.16668 0.555547ZM0.583324 8.88888V1.11112C0.583324 1.05669 0.600551 1.00732 0.615973 0.957578C1.38904 1.63143 3.72594 3.66747 5.24122 4.97979C3.73086 6.21539 1.39336 8.32602 0.614141 9.03367C0.600387 8.98643 0.583324 8.94023 0.583324 8.88888ZM12.8333 9.44445H1.16668C1.12008 9.44445 1.07866 9.42898 1.03515 9.41909C1.84034 8.68805 4.19273 6.56529 5.67654 5.35635C5.8461 5.50294 6.0159 5.64928 6.18595 5.79536C6.42636 6.00208 6.70775 6.11112 7 6.11112C7.29225 6.11112 7.57364 6.00206 7.81375 5.79562C7.98389 5.64945 8.1538 5.50303 8.32347 5.35635C9.80736 6.56516 12.1594 8.68776 12.9648 9.41909C12.9213 9.42898 12.88 9.44445 12.8333 9.44445ZM13.4167 8.88888C13.4167 8.94021 13.3996 8.98643 13.3859 9.03367C12.6064 8.32565 10.2691 6.21526 8.7588 4.97982C10.2741 3.6675 12.6107 1.63164 13.384 0.957526C13.3994 1.00727 13.4167 1.05667 13.4167 1.11109V8.88888Z"
+                                  />
+                                </g>
+                              </svg>
+                              <span class="__cf_email__"
+                                >info@peacemain.com</span
+                              >
+                            </a>
                           </h6>
                         </div>
                       </div>
@@ -398,11 +367,13 @@
                     </div>
                     <div class="menu-container">
                       <ul>
-                        <li><router-link to="/story">Our Story</router-link></li>
-                        <li><router-link to="/contact">Contact Us</router-link></li>
-                        <li><router-link to="/faq">FAQ’s</router-link></li>
-                        <li><router-link to="/consultants">Our Consultants</router-link></li>
-                        <li><router-link to="/careers">Careers</router-link></li>
+           
+                        <li>
+                          <router-link to="/servics">Our Services</router-link>
+                        </li>
+                        <li>
+                          <router-link to="/careers">Careers</router-link>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -414,15 +385,21 @@
                     </div>
                     <div class="menu-container">
                       <ul>
-                        <li><router-link to="/estate">Real Estate</router-link></li>
+                        <li>
+                          <router-link to="/estate">Real Estate</router-link>
+                        </li>
                         <li>
                           <router-link to="/estate">Construction</router-link>
                         </li>
                         <li>
-                          <router-link to="/estate">Finnace Service</router-link>
+                          <router-link to="/estate"
+                            > Financial Services
+                            </router-link
+                          >
                         </li>
-                        <li><router-link to="/estate">Dealership</router-link></li>
-       
+                        <li>
+                          <router-link to="/estate">Dealership</router-link>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -430,17 +407,25 @@
                 <div class="col-lg-2 col-md-6 d-flex justify-content-md-end">
                   <div class="footer-widget">
                     <div class="widget-title">
-                      <h3>Legelity</h3>
+                      <h3>Legality</h3>
                     </div>
                     <div class="menu-container">
                       <ul>
                         <li>
-                          <router-link to="/risk/disclosure">Privacy & Policy</router-link>
+                          <router-link to="/risk/disclosure"
+                            >Privacy & Policy</router-link
+                          >
                         </li>
                         <li>
-                          <router-link to="/risk/disclosure">Terms & Condition</router-link>
+                          <router-link to="/risk/disclosure"
+                            >Terms & Condition</router-link
+                          >
                         </li>
-                        <li><router-link to="/risk/disclosure">Cookie Policy</router-link></li>
+                        <li>
+                          <router-link to="/risk/disclosure"
+                            >Cookie Policy</router-link
+                          >
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -449,85 +434,7 @@
             </div>
           </div>
           <div class="col-lg-12 mb-10">
-            <div class="footer-menu-wrap">
-              <div class="footer-logo">
-                <router-link to="/"
-                  ><img src="./../assets/frontend/img/logo1.png" alt="footer-logo"
-                /></router-link>
-              </div>
-              <ul class="footer-menu">
-                <li>
-                  <router-link to="/servics"
-                    >International Business
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                      />
-                    </svg>
-                  </router-link>
-                </li>
-                <li>
-                  <a href="services1.html"
-                    >Marketing Research
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="services1.html"
-                    >Finance Consulting
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="services1.html"
-                    >Human Resources
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M8.48878 0.885308L0 9.37364L0.626356 10L9.11469 1.51122V7.38037H10V0H2.61963V0.885308H8.48878Z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-               
-              </ul>
-            </div>
-            
+            <div class="footer-menu-wrap"></div>
           </div>
         </div>
       </div>
@@ -558,7 +465,7 @@ export default {
         return "";
       }
     },
-    btn(){
+    btn() {
       if (this.showSidebar == true) {
         return "active";
       } else {
@@ -593,7 +500,7 @@ export default {
         this.faqId = id;
       }
     },
-   
+
     sidebar() {
       if (this.showSidebar == true) {
         this.showSidebar = false;
@@ -626,8 +533,4 @@ export default {
 </script>
 
 <style scoped>
-
-
-
-
 </style>

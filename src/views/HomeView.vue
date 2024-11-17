@@ -8,10 +8,10 @@ import bannerImage from "@/assets/frontend/img/home2/banner-img-01.jpg";
 import bannerImage2 from "@/assets/frontend/img/home2/banner-img-03.jpg";
 import bannerImage3 from "@/assets/frontend/img/home2/banner-img-02.jpg";
 import bannerImage4 from "@/assets/frontend/img/home2/banner-img-04.jpg";
-import testimonial from "@/assets/frontend/img/home2/testimonial-img.jpg";
-import testimonial2 from "@/assets/frontend/img/home2/testimonial-img2.jpg";
-import testimonial3 from "@/assets/frontend/img/home2/testimonial-img3.jpg";
-import testimonial4 from "@/assets/frontend/img/home2/testimonial-img4.jpg";
+import testimonial from "@/assets/frontend/img/home2/team1.jpg";
+import testimonial2 from "@/assets/frontend/img/home2/team2.jpg";
+import testimonial3 from "@/assets/frontend/img/home2/team3.jpg";
+import testimonial4 from "@/assets/frontend/img/home2/team4.jpg";
 import project1 from "@/assets/frontend/img/home2/project-01.jpg";
 import project2 from "@/assets/frontend/img/home2/project-02.jpg";
 import project3 from "@/assets/frontend/img/home2/project-03.jpg";
@@ -41,33 +41,33 @@ export default {
           image: testimonial,
           title: "Great Consulting!",
           content:
-            "The consulting engagement begins with the consultant or consulting team working closely with the client to understand the client's business, goals, challenges, and objectives.",
-          author: "Mrs. Emily Sophia",
-          position: "Froxio, CEO",
+            "I had the opportunity to work with PEACEMAIN Consulting a year ago, and I must say that I am highly satisfied with the company's performance and the dedication of its employees. Lily, my consultant, provided me with comprehensive information about the company's programs and the unique aspects of the UAE market",
+          author: "Anil Kumar G",
+          position: "ICL Fincorp (Dubai)",
         },
         {
           image: testimonial2,
           title: "Great Consulting!",
           content:
-            "The specific services offered by business consultants can vary widely depending on the consultant's expertise and the needs of the client. Consultants typically work closely with their clients.",
-          author: "Mr. Thomas Robert",
-          position: "Maxcrio, HR",
+            "PEACEMAIN Team is outstanding. Their market expertise,personalized approach, and transparent communication make them a top choice. With their guidance, I've achieved impressive results and gained valuable financial insights. Highly recommended",
+          author: "GWG (Cyprus)",
+          position: "Ka Lok Hui (Cyprus)",
         },
         {
           image: testimonial3,
           title: "Great Consulting!",
           content:
-            "The information you might include in a Managing Director's profile typically consists of the individual's background, experience, and responsibilities within a company.",
-          author: "Mrs. Flurance Miyagi",
-          position: "Froxio, CEO",
+            "PEACEMAIN’s customer service is top-notch. They are fast,helpful and treat you with respect - which I find essential when dealing with agents, since they handle your sales & marketing division. Queries are always dealt with, withdrawals always processed. Would highly recommend",
+          author: "Kristian von Bengtson",
+          position: "Orbex (UK)",
         },
         {
           image: testimonial4,
           title: "Great Consulting!",
           content:
             "You can adjust the length and style of the line to match the overall design and formatting of your document. Some other divider options include dashes, stars, or even a graphical element.",
-          author: "Mr. Rakhab Uddin",
-          position: "Nurio, CEO",
+          author: "Georges Cohen",
+          position: "Squared Financial (EU)",
         },
       ],
       projects: [
@@ -175,16 +175,16 @@ export default {
               <div class="row g-lg-4 gy-5">
                 <div class="col-lg-7">
                   <div class="banner-left-content">
-                    <span>Real Estate</span>
+                    <!-- <span>Real Estate</span> -->
                     <h1>
                       Unlocking Your Business's Potential With Innovate
                       Consulting.
                     </h1>
-                    <a
+                    <router-link to="/contact"
                       class="primary-btn1 btn-hover"
                       href="service-details.html"
                     >
-                      Explore More
+                      Contact Us
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
@@ -198,7 +198,7 @@ export default {
                         ></path>
                       </svg>
                       <span style="top: 240.594px; left: 153.5px"></span>
-                    </a>
+                    </router-link>
                   </div>
                 </div>
                 <div class="col-lg-5 d-flex align-items-end">
@@ -211,8 +211,8 @@ export default {
                     <ul class="btn-group">
                       <li class="success-rate">
                         Success Rate <span>90%</span>
-                      </li>
-                      <li><a href="#">Determine Problem</a></li>
+                      </li >
+                      <li  class="success-rate">Determine Problem</li>
                     </ul>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export default {
                     value.
                   </h2>
                 </div>
-                <a class="explore-btn" href="services1.html">
+                <router-link to="/servics" class="explore-btn" href="services1.html">
                   Explore Area
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +256,7 @@ export default {
                       d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                     />
                   </svg>
-                </a>
+                </router-link>
               </div>
               <div
                 class="col-lg-12 d-flex align-items-center position-relative"
@@ -484,7 +484,7 @@ export default {
                     performance, solve specific problems.
                   </h2>
                 </div>
-                <a class="primary-btn1 btn-hover" href="about.html">
+                <router-link to="/about" class="primary-btn1 btn-hover">
                   About More
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -499,30 +499,13 @@ export default {
                     ></path>
                   </svg>
                   <span></span>
-                </a>
+                </router-link>
                 <div class="review-and-feature">
-                  <a href="https://clutch.co/" class="review-area white">
-                    <div class="review-name">
-                      <span>Review On</span>
-                      <img
-                        src="./../assets/frontend/img/home1/clutch-logo-white.svg"
-                        alt
-                      />
-                    </div>
-                    <div class="review">
-                      <ul>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star"></i></li>
-                        <li><i class="fa fa-star-half"></i></li>
-                      </ul>
-                      <span>(50 reviews)</span>
-                    </div>
-                  </a>
+                 
+
                   <ul class="features">
                     <li>Problem Solving</li>
-                    <li>Determine Probelm</li>
+                    <li>Determine Problem</li>
                     <li>Cost-Efficiency</li>
                   </ul>
                 </div>
@@ -690,7 +673,7 @@ export default {
                   >
                     <div class="testimonial-card">
                       <div class="testimonial-img magnetic-item">
-                        <img :src="testimonial.image" alt />
+                        <img  :src="testimonial.image" alt />
                       </div>
                       <div class="testimonal-content">
                         <span>{{ testimonial.title }}</span>
@@ -895,17 +878,17 @@ export default {
                         >Health Care<span>Consulting</span></a
                       >
                     </h5>
-                    <div class="services-img">
+                    <!-- <div class="services-img">
                       <img
                         src="./../assets/frontend/img/home2/services-01.jpg"
                         alt
                       />
-                    </div>
+                    </div> -->
                     <p>
                       Health and care consulting refers to the practice of
                       providing expert advice and guidance.
                     </p>
-                    <a class="explore-btn" href="services1.html">
+                    <router-link  class="explore-btn" to="/servics">
                       View More
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -919,7 +902,7 @@ export default {
                           d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                         ></path>
                       </svg>
-                    </a>
+                    </router-link>
                   </div>
                   <div class="single-services">
                     <div class="icon">
@@ -944,17 +927,12 @@ export default {
                         >Marketing Research<span>Consulting</span></a
                       >
                     </h5>
-                    <div class="services-img">
-                      <img
-                        src="./../assets/frontend/img/home2/services-02.jpg"
-                        alt
-                      />
-                    </div>
+
                     <p>
                       Helping clients improve their marketing and sales
                       strategies to increase revenue and market share.
                     </p>
-                    <a class="explore-btn" href="services1.html">
+                        <router-link  class="explore-btn" to="/servics">
                       View More
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -968,7 +946,7 @@ export default {
                           d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                         ></path>
                       </svg>
-                    </a>
+                        </router-link>
                   </div>
                   <div class="single-services">
                     <div class="icon">
@@ -988,17 +966,12 @@ export default {
                         >Technology<span>Consulting</span></a
                       >
                     </h5>
-                    <div class="services-img">
-                      <img
-                        src="./../assets/frontend/img/home2/services-03.jpg"
-                        alt
-                      />
-                    </div>
+                    
                     <p>
                       Providing financial advice, including cost reduction
                       strategies, financial planning.
                     </p>
-                    <a class="explore-btn" href="services1.html">
+                       <router-link  class="explore-btn" to="/servics">
                       View More
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1012,7 +985,7 @@ export default {
                           d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                         ></path>
                       </svg>
-                    </a>
+                       </router-link>
                   </div>
                   <div class="single-services">
                     <div class="icon">
@@ -1044,17 +1017,12 @@ export default {
                         >Human Resource<span>Consulting</span></a
                       >
                     </h5>
-                    <div class="services-img">
-                      <img
-                        src="./../assets/frontend/img/home2/services-04.jpg"
-                        alt
-                      />
-                    </div>
+             
                     <p>
                       Health and care consulting refers to the practice of
                       providing expert advice and guidance.
                     </p>
-                    <a class="explore-btn" href="services1.html">
+                        <router-link  class="explore-btn" to="/servics">
                       View More
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1068,7 +1036,7 @@ export default {
                           d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                         ></path>
                       </svg>
-                    </a>
+                        </router-link>
                   </div>
                   <div class="single-services">
                     <div class="icon">
@@ -1100,17 +1068,12 @@ export default {
                         >Finance<span>Consulting</span></a
                       >
                     </h5>
-                    <div class="services-img">
-                      <img
-                        src="./../assets/frontend/img/home2/services-05.jpg"
-                        alt
-                      />
-                    </div>
+                    
                     <p>
                       Providing financial advice, including cost reduction
                       strategies, financial planning, and risk management.
                     </p>
-                    <a class="explore-btn" href="services1.html">
+                       <router-link  class="explore-btn" to="/servics">
                       View More
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1124,7 +1087,7 @@ export default {
                           d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                         ></path>
                       </svg>
-                    </a>
+                       </router-link>
                   </div>
                   <div class="single-services">
                     <div class="icon">
@@ -1152,18 +1115,12 @@ export default {
                         >International Business<span>Consulting</span></a
                       >
                     </h5>
-                    <div class="services-img">
-                      <img
-                        src="./../assets/frontend/img/home2/services-06.jpg"
-                        alt
-                      />
-                    </div>
+                
                     <p>
                       Health and care consulting refers to the practice of
                       providing expert advice and guidance.
                     </p>
-                    <a class="explore-btn" href="services1.html">
-                      View More
+    <router-link  class="explore-btn" to="/servics">                      View More
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="12"
@@ -1176,7 +1133,7 @@ export default {
                           d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                         ></path>
                       </svg>
-                    </a>
+    </router-link>
                   </div>
                 </div>
               </div>
@@ -1185,66 +1142,9 @@ export default {
         </div>
       </div>
     </div>
-    <div class="event-and-confarance-section mb-130">
-      <div class="title">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-        >
-          <path
-            d="M25.789 12.721C21.8989 6.99787 16.7033 3.95612 13.9824 5.81985C13.6828 6.03084 13.4224 6.29267 13.2132 6.59348C13.2132 6.61546 6.91425 19.3627 6.91425 19.3627L3.39777 21.7451C2.85794 22.1116 2.3956 22.5808 2.03715 23.126C1.67871 23.6712 1.43119 24.2816 1.30873 24.9225C1.18627 25.5633 1.19127 26.2221 1.32346 26.861C1.45564 27.4999 1.7124 28.1066 2.07909 28.6462L2.23733 28.8792C2.97852 29.9589 4.11549 30.7028 5.40164 30.9497C6.68778 31.1966 8.01939 30.9264 9.10766 30.1979L14.756 38.5188C15.5868 39.5429 17.1824 40.5627 19.1516 39.3627C19.5005 39.1365 19.7981 38.8397 20.0252 38.4914C20.2523 38.1432 20.4039 37.7512 20.4703 37.3407C20.5499 36.9325 20.5477 36.5125 20.4639 36.1051C20.3802 35.6977 20.2165 35.3109 19.9824 34.9671L15.0066 27.6264C15.0066 27.6264 26.7692 26.6902 26.8132 26.6726C27.1804 26.5957 27.5286 26.4463 27.8373 26.233C29.2351 25.2836 29.7362 23.2924 29.2527 20.6242C28.8176 18.1671 27.5824 15.3847 25.789 12.721ZM3.51645 28.0133L3.35821 27.7803C3.10521 27.4078 2.92816 26.9891 2.83718 26.5482C2.74621 26.1072 2.74309 25.6526 2.82801 25.2104C2.91294 24.7683 3.08423 24.3472 3.3321 23.9713C3.57996 23.5954 3.89952 23.2721 4.27249 23.0198L7.30986 20.9539L11.3186 26.8572L8.28129 28.9231C7.90875 29.1765 7.48993 29.3539 7.04879 29.4453C6.60764 29.5366 6.15281 29.5402 5.7103 29.4557C5.26779 29.3712 4.84627 29.2003 4.46984 28.9528C4.0934 28.7053 3.76943 28.386 3.51645 28.0133ZM18.7165 35.833C18.9567 36.1905 19.0453 36.6287 18.9629 37.0514C18.8805 37.4741 18.6338 37.8469 18.2769 38.088C17.9187 38.3284 17.4799 38.4172 17.0564 38.3348C16.633 38.2524 16.2594 38.0056 16.0175 37.6484L10.3868 29.3539L12.6505 27.8155L13.2483 27.7671L18.7165 35.833ZM12.7736 26.2594L8.40436 19.8242L12.5714 11.3275C12.9758 13.7144 14.1582 16.5495 16.0483 19.3319C17.9384 22.1144 20.1362 24.2594 22.2022 25.5166L12.7736 26.2594ZM25.7406 25.2352C23.6395 25.099 20.2197 22.7297 17.323 18.4616C14.4263 14.1935 13.4857 10.1539 14.1318 8.14513C14.2485 7.76807 14.4814 7.43752 14.7971 7.2007C15.1129 6.96388 15.4954 6.83289 15.8901 6.82645C17.9736 6.82645 21.5208 9.20886 24.5011 13.6001C26.1802 16.0704 27.4022 18.655 27.7362 20.9144C28.3912 25.2352 25.7406 25.2352 25.7406 25.2352Z"
-          />
-          <path
-            d="M20.2944 12.8836C19.756 12.7779 19.2019 12.7806 18.6645 12.8915C18.1272 13.0025 17.6173 13.2195 17.1648 13.5298C17.0814 13.5875 17.0101 13.6611 16.9552 13.7464C16.9002 13.8316 16.8626 13.9268 16.8444 14.0266C16.8262 14.1264 16.8279 14.2288 16.8493 14.328C16.8707 14.4271 16.9114 14.5211 16.9692 14.6045C17.0269 14.6879 17.1005 14.7591 17.1857 14.8141C17.271 14.8691 17.3662 14.9067 17.466 14.9249C17.5658 14.9431 17.6682 14.9414 17.7674 14.92C17.8665 14.8986 17.9605 14.8578 18.0439 14.8001C18.3305 14.6056 18.6526 14.4694 18.9918 14.3994C19.3311 14.3293 19.6808 14.3268 20.021 14.3919C20.3612 14.457 20.6852 14.5885 20.9746 14.7788C21.264 14.9691 21.5131 15.2146 21.7076 15.5012C21.9022 15.7878 22.0383 16.1099 22.1084 16.4492C22.1784 16.7884 22.181 17.1381 22.1159 17.4783C22.0508 17.8185 21.9193 18.1426 21.729 18.4319C21.5386 18.7213 21.2931 18.9704 21.0065 19.165C20.8714 19.2583 20.7697 19.3924 20.7163 19.5477C20.6628 19.703 20.6605 19.8713 20.7096 20.028C20.7588 20.1847 20.8568 20.3216 20.9893 20.4186C21.1218 20.5156 21.2819 20.5677 21.4461 20.5672C21.6028 20.5701 21.7565 20.524 21.8857 20.4353C22.5693 19.9721 23.1002 19.3165 23.4109 18.5514C23.7217 17.7863 23.7984 16.9462 23.6313 16.1375C23.4642 15.3288 23.0608 14.5879 22.4722 14.0087C21.8837 13.4294 21.1365 13.0379 20.3252 12.8836H20.2944ZM26.7384 7.37155H26.8131C27.0034 7.37147 27.1869 7.30088 27.3281 7.17343C27.4694 7.04597 27.5584 6.87069 27.578 6.68144L28.1714 0.914403C28.1849 0.812426 28.1778 0.708777 28.1505 0.609587C28.1233 0.510398 28.0764 0.417683 28.0127 0.336928C27.949 0.256173 27.8697 0.189019 27.7796 0.139438C27.6894 0.0898575 27.5903 0.0588576 27.488 0.0482727C27.3856 0.0376878 27.2822 0.0477329 27.1839 0.0778137C27.0855 0.107894 26.9941 0.1574 26.9152 0.223401C26.8363 0.289402 26.7715 0.370558 26.7245 0.462067C26.6775 0.553576 26.6494 0.65358 26.6417 0.756161L26.0527 6.52759C26.0318 6.73042 26.0923 6.93325 26.2209 7.0915C26.3494 7.24975 26.5356 7.35048 26.7384 7.37155ZM36.6813 6.18473C36.5683 6.01448 36.3926 5.89582 36.1925 5.85464C35.9924 5.81347 35.7841 5.85312 35.6131 5.96495L30.2549 9.48144C30.1158 9.57331 30.0102 9.7079 29.9542 9.86494C29.8982 10.022 29.8947 10.193 29.9443 10.3521C29.9939 10.5113 30.0939 10.6501 30.2292 10.7475C30.3645 10.845 30.5278 10.8958 30.6944 10.8924C30.8499 10.896 31.003 10.8532 31.134 10.7693L36.4923 7.25286C36.6585 7.13591 36.7717 6.95792 36.8071 6.75779C36.8425 6.55765 36.7973 6.35163 36.6813 6.18473ZM38.3208 15.5737L32.0879 14.4529C31.8868 14.4167 31.6795 14.462 31.5118 14.5786C31.344 14.6952 31.2295 14.8737 31.1933 15.0748C31.1572 15.2759 31.2024 15.4832 31.3191 15.6509C31.4357 15.8187 31.6142 15.9332 31.8153 15.9693L38.0439 17.0902H38.1802C38.3762 17.096 38.5669 17.0266 38.7135 16.8964C38.8601 16.7662 38.9514 16.5849 38.9688 16.3896C38.9862 16.1943 38.9284 15.9997 38.8071 15.8456C38.6859 15.6915 38.5103 15.5896 38.3164 15.5606L38.3208 15.5737Z"
-          />
-        </svg>
-        <h3>CONFERNECE:</h3>
-      </div>
-      <div class="events">
-        <div class="marquee_text2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="30"
-            viewBox="0 0 40 30"
-          >
-            <path d="M12.6086 11.4707L25.2172 30.0001H0L12.6086 11.4707Z" />
-            <path
-              d="M40.0001 29.9999H27.9632L13.9133 8.99814L19.9299 0L40.0001 29.9999Z"
-            />
-          </svg>
-          <a href="event-details.html">Upoming Event 16th Dec</a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="30"
-            viewBox="0 0 40 30"
-          >
-            <path d="M12.6086 11.4707L25.2172 30.0001H0L12.6086 11.4707Z" />
-            <path
-              d="M40.0001 29.9999H27.9632L13.9133 8.99814L19.9299 0L40.0001 29.9999Z"
-            />
-          </svg>
-          <a href="event-details.html">Speaker- Mr. Daniel Scoot</a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="30"
-            viewBox="0 0 40 30"
-          >
-            <path d="M12.6086 11.4707L25.2172 30.0001H0L12.6086 11.4707Z" />
-            <path
-              d="M40.0001 29.9999H27.9632L13.9133 8.99814L19.9299 0L40.0001 29.9999Z"
-            />
-          </svg>
-          <a href="event-details.html">Melbourne City, Australia</a>
-        </div>
-      </div>
-    </div>
+    
 
-    <div class="project-section mb-130">
+    <div class="project-section mt-50 mb-130">
       <div class="container-fluid one">
         <div class="row g-4">
           <div
@@ -1256,21 +1156,7 @@ export default {
                 Conduct market research to understand industry competition.
               </h2>
             </div>
-            <a class="explore-btn" href="portfolio-three-column-tab.html">
-              Explore Portfolio
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                />
-              </svg>
-            </a>
+            
           </div>
           <div class="col-lg-12">
             <div class="swiper project-slider">
@@ -1302,21 +1188,7 @@ export default {
                           }}</a>
                         </h4>
                       </div>
-                      <a class="explore-btn" href="portfolio-details.html">
-                        Explore More
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="12"
-                          viewBox="0 0 12 12"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                          />
-                        </svg>
-                      </a>
+                      
                     </div>
                   </div>
                 </Slide>
@@ -1528,7 +1400,7 @@ export default {
               <span>Our People</span>
               <h2>Excellent Service Provided by Our Superb Consultant.</h2>
             </div>
-            <a class="primary-btn1 btn-hover" href="our-people1.html">
+            <router-link class="primary-btn1 btn-hover" to="/consultants">
               Explore People
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1543,7 +1415,7 @@ export default {
                 ></path>
               </svg>
               <span></span>
-            </a>
+            </router-link>
           </div>
           <div class="col-lg-12">
             <div class="row g-4">
@@ -1762,22 +1634,7 @@ export default {
                 consulting.
               </h2>
             </div>
-            <a class="explore-btn two" href="blog-standard.html">
-              Explore More
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                ></path>
-              </svg>
-              <span></span>
-            </a>
+          
           </div>
           <div class="col-lg-12">
             <div class="divider"></div>
@@ -1832,26 +1689,12 @@ export default {
                   </div>
                   <div class="blog-content">
                     <h4>
-                      <a href="blog-details.html"
+                      <a 
                         >Consulting Industry Adapts to the Changing Business
                         Landscape.</a
                       >
                     </h4>
-                    <a class="explore-btn" href="blog-details.html">
-                      Read More
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 12 12"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                        ></path>
-                      </svg>
-                    </a>
+                   
                   </div>
                 </div>
               </div>
@@ -1905,26 +1748,12 @@ export default {
                   </div>
                   <div class="blog-content">
                     <h4>
-                      <a href="blog-details.html"
+                      <a 
                         >Tech-Driven Disruption: How Consulting Firms Are
                         Embracing Innovation.</a
                       >
                     </h4>
-                    <a class="explore-btn" href="blog-details.html">
-                      Read More
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 12 12"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                        ></path>
-                      </svg>
-                    </a>
+                 
                   </div>
                 </div>
               </div>
@@ -1978,26 +1807,12 @@ export default {
                   </div>
                   <div class="blog-content">
                     <h4>
-                      <a href="blog-details.html"
+                      <a 
                         >The Future of Strategy Consulting: Insights from
                         Industry Leaders.</a
                       >
                     </h4>
-                    <a class="explore-btn" href="blog-details.html">
-                      Read More
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 12 12"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                        ></path>
-                      </svg>
-                    </a>
+                    
                   </div>
                 </div>
               </div>
@@ -2051,26 +1866,12 @@ export default {
                   </div>
                   <div class="blog-content">
                     <h4>
-                      <a href="blog-details.html"
+                      <a 
                         >The Role of AI and Data Analytics in Modern
                         Consulting.</a
                       >
                     </h4>
-                    <a class="explore-btn" href="blog-details.html">
-                      Read More
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 12 12"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                        ></path>
-                      </svg>
-                    </a>
+                   
                   </div>
                 </div>
               </div>
