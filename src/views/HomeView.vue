@@ -461,7 +461,7 @@ export default {
                   <img src="./../assets/frontend/img/home2/shape-01.png" alt />
                 </div>
                 <div class="company-logo">
-                  <h2>APLOXN</h2>
+                  <h2>Peacemain</h2>
                 </div>
               </div>
             </div>

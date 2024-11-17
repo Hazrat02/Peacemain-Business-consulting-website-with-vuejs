@@ -73,7 +73,7 @@
                       improvement, and develop strategies and solutions to
                       address.
                     </p>
-                    <a href="apply-position.html">
+                    <router-link to="/apply">
                       Apply Position
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@
                           d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
                         />
                       </svg>
-                    </a>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -483,7 +483,7 @@
         <div class="row">
           <div class="col-lg-12 mb-60">
             <div class="section-title1 two">
-              <h2>Join to Our Aploxn</h2>
+              <h2>Join to Our Peacemain</h2>
               <p>
                 Current business operations, identify areas of improvement, and
                 develop strategies and solutions to address.As you gain
@@ -506,7 +506,7 @@
                   </ul>
                 </div>
               </div>
-              <a class="primary-btn1 btn-hover" href="apply-position.html">
+              <router-link to="/apply" class="primary-btn1 btn-hover" >
                 Apply Position
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -521,7 +521,7 @@
                   ></path>
                 </svg>
                 <span></span>
-              </a>
+              </router-link>
             </div>
             <div class="single-job-card mb-30">
               <div class="job-list-content">
@@ -537,7 +537,7 @@
                   </ul>
                 </div>
               </div>
-              <a class="primary-btn1 btn-hover" href="apply-position.html">
+              <router-link to="/apply" class="primary-btn1 btn-hover" >
                 Apply Position
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -552,7 +552,7 @@
                   ></path>
                 </svg>
                 <span></span>
-              </a>
+              </router-link>
             </div>
             <div class="single-job-card">
               <div class="job-list-content">
@@ -568,7 +568,7 @@
                   </ul>
                 </div>
               </div>
-              <a class="primary-btn1 btn-hover" href="apply-position.html">
+              <router-link to="/apply" class="primary-btn1 btn-hover" >
                 Apply Position
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -583,7 +583,7 @@
                   ></path>
                 </svg>
                 <span></span>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>

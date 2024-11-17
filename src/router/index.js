@@ -15,45 +15,9 @@ import cookieView from '../views/cookie.vue'
 import storyView from '../views/story.vue'
 import faqView from '../views/faq.vue'
 import careersView from '../views/careers.vue'
+import applyview from '../views/Apply.vue'
 // import LeadView from '../views/LeadView.vue'
 
-// user
-
-// import DeshboardView from '../views/Deshboard/DeshboardView.vue'
-// import KycView from '../views/Deshboard/KycView.vue'
-// import DepositView from '../views/Deshboard/DepositView.vue'
-// import WithdrawView from '../views/Deshboard/WithdrawView.vue'
-// import depositLog from '../views/Deshboard/depositLog.vue'
-
-// import withdrawLog from '../views/Deshboard/withdrawLog.vue'
-// import TransactionView from '../views/Deshboard/TransactionView.vue'
-// import AccountView from '../views/Deshboard/AccountView.vue'
-// import ChangeView from '../views/Deshboard/ChangeView.vue'
-
-
-// admin
-
-
-// import AdminDeshboardview from '../views/Admin/DeshboardView.vue'
-// import UserManageview from './../views/Admin/UserManageView.vue'
-// import LeadsManageview from '../views/Admin/LeadsManageView.vue'
-// import Leadsview from '../views/Admin/LeadsView.vue'
-
-// import AdminTransactionView from '../views/Admin/TransactionView.vue'
-// import UserDetailsview from '../views/Admin/UserDetailsView.vue'
-// import AdminDepositView from '../views/Admin/DepositView.vue'
-// import AdminWithdrawView from '../views/Admin/WithdrawView.vue'
-// import AdminChangeView from '../views/Admin/ChangeView.vue'
-// import transferView from '../views/Admin/transferView.vue'
-
-
-// import LoginComponent from '../views/Auth/SignIn.vue'
-// import RegisterComponent from '../views/Auth/SignUp.vue'
-// import ForgetComponent from '../views/Auth/Forget.vue'
-// import authenticated from '../midleware/auth.js';
-// import { logout } from "../midleware/auth.js";
-// import { setloading } from '../utils/extra'
-// import axios from 'axios';
 
 
 
@@ -198,6 +162,13 @@ const router = createRouter({
       name: 'careers',
   
       component:careersView,
+ 
+    },
+    {
+      path: '/apply',
+      name: 'job',
+  
+      component:applyview,
  
     },
 

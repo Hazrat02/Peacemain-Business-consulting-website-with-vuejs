@@ -48,8 +48,8 @@ export default {
             <div class="col-lg-5">
               <div class="single-location mb-50">
                 <div class="title-and-view-btn">
-                  <h4>Sydne, Australia</h4>
-                  <a href="#"
+                  <h4>Limassol, Cyprus</h4>
+                  <a href="https://maps.app.goo.gl/sDLkkAWRX1Ho9hUD9"
                     >View Map
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -78,8 +78,7 @@ export default {
                       </svg>
                     </div>
                     <div class="info">
-                      <a href="tel:05661111985">+880 566 1111 985</a>
-                      <a href="tel:06571111576">+880 657 1111 576</a>
+                      <a href="tel:+91-8123781857">+91-8123781857</a>
                     </div>
                   </li>
                   <li>
@@ -96,20 +95,13 @@ export default {
                       </svg>
                     </div>
                     <div class="info">
+                      
                       <a
-                        href="/cdn-cgi/l/email-protection#b5dcdbd3dad0cdd4d8c5d9d0f5d2d8d4dcd99bd6dad8"
+                        href="mailto:info@peacemain.com"
                         ><span
                           class="__cf_email__"
-                          data-cfemail="ef868189808a978e829f838aaf88828e8683c18c8082"
-                          >[email&#160;protected]</span
-                        ></a
-                      >
-                      <a
-                        href="/cdn-cgi/l/email-protection#0f666169606a776e627f636a3d4f68626e6663216c6062"
-                        ><span
-                          class="__cf_email__"
-                          data-cfemail="bad3d4dcd5dfc2dbd7cad6df88faddd7dbd3d694d9d5d7"
-                          >[email&#160;protected]</span
+                          
+                          >info@peacemain.com</span
                         ></a
                       >
                     </div>
@@ -132,8 +124,8 @@ export default {
                     </div>
                     <div class="info">
                       <a
-                        >Canada City, Office-02, Road-11, House-3B/B,
-                        Section-H</a
+                        >PEACEMAIN Ltd.,Celestia Kyriakou Matsi 5, Limassol 4529, Cyprus
+                        </a
                       >
                     </div>
                   </li>
@@ -141,8 +133,8 @@ export default {
               </div>
               <div class="single-location">
                 <div class="title-and-view-btn">
-                  <h4>NewYork, USA</h4>
-                  <a href="#"
+                  <h4>Bangalore, India</h4>
+                  <a href="https://maps.app.goo.gl/nPuSUvb5bbtuYK8W6"
                     >View Map
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -171,8 +163,7 @@ export default {
                       </svg>
                     </div>
                     <div class="info">
-                      <a href="tel:05661111985">+880 566 1111 985</a>
-                      <a href="tel:06571111576">+880 657 1111 576</a>
+                      <a href="tel:+91-8123781857">+91-8123781857</a>
                     </div>
                   </li>
                   <li>
@@ -189,20 +180,13 @@ export default {
                       </svg>
                     </div>
                     <div class="info">
+                      
                       <a
-                        href="/cdn-cgi/l/email-protection#cda4a3aba2a8b5aca0bda1a88daaa0aca4a1e3aea2a0"
+                        href="mailto:info@peacemain.com"
                         ><span
                           class="__cf_email__"
-                          data-cfemail="21484f474e4459404c514d4461464c40484d0f424e4c"
-                          >[email&#160;protected]</span
-                        ></a
-                      >
-                      <a
-                        href="/cdn-cgi/l/email-protection#462f282029233e272b362a237406212b272f2a6825292b"
-                        ><span
-                          class="__cf_email__"
-                          data-cfemail="7b12151d141e031a160b171e493b1c161a121755181416"
-                          >[email&#160;protected]</span
+                          
+                          >info@peacemain.com</span
                         ></a
                       >
                     </div>
@@ -225,8 +209,10 @@ export default {
                     </div>
                     <div class="info">
                       <a
-                        >Canada City, Office-02, Road-11, House-3B/B,
-                        Section-H</a
+                        >PEACEMAIN Consulting Pvt. Ltd., 249, 24th Main Rd, KR Layout, JP Nagar Phase 6, J. P. Nagar, Bengaluru,
+Karnataka 560078, India
+
+                        </a
                       >
                     </div>
                   </li>
@@ -237,7 +223,7 @@ export default {
               <div class="company-map">
                 <iframe
             
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5647631857846!2d90.36311167605992!3d23.83407118555764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c14c8682a473%3A0xa6c74743d52adb88!2sEgens%20Lab!5e0!3m2!1sen!2sbd!4v1700138349574!5m2!1sen!2sbd"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10584.26445645795!2d77.58083569448927!3d12.906775654837578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1513448609bf%3A0x22d8538479cabefa!2s250%2C%2024th%20Main%20Rd%2C%20KR%20Layout%2C%20JP%20Nagar%20Phase%206%2C%20J.%20P.%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560078%2C%20India!5e0!3m2!1sen!2sbd!4v1731841896879!5m2!1sen!2sbd"
                   allowfullscreen
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -307,7 +293,7 @@ export default {
                         />
                         <label class="form-check-label" for="contactCheck">
                           Please save my name, email address for the next time I
-                          message with aploxn.
+                          message with peacemain.
                         </label>
                       </div>
                     </div>
