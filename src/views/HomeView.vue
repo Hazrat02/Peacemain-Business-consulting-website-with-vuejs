@@ -667,7 +667,7 @@ export default {
                   @slide-start="onSlideChange"
                 >
                   <Slide
-                    class="swiper-slide"
+                    class="swiper-slide "
                     v-for="(testimonial, index) in testimonials"
                     :key="index"
                   >
@@ -697,8 +697,11 @@ export default {
                         </div>
                       </div>
                     </div>
+                    
                   </Slide>
+                
                 </Carousel>
+   
               </div>
               <div class="slider-btn-area">
                 <div class="franctional-pagi2">
